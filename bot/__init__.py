@@ -14,6 +14,7 @@ from dotenv import load_dotenv
 from pyrogram import Client, enums
 from asyncio import get_event_loop
 from megasdkrestclient import MegaSdkRestClient, errors as mega_err
+import telegram
 
 main_loop = get_event_loop()
 

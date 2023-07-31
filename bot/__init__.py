@@ -1,7 +1,6 @@
 from logging import getLogger, FileHandler, StreamHandler, INFO, basicConfig, error as log_error, info as log_info, warning as log_warning
 from socket import setdefaulttimeout
 from faulthandler import enable as faulthandler_enable
-from telegram.ext import Updater as tgUpdater
 from qbittorrentapi import Client as qbClient
 from aria2p import API as ariaAPI, Client as ariaClient
 from os import remove as osremove, path as ospath, environ
@@ -15,6 +14,8 @@ from pyrogram import Client, enums
 from asyncio import get_event_loop
 from megasdkrestclient import MegaSdkRestClient, errors as mega_err
 import telegram
+import telegram.ext
+from telegram.ext import Updater as tgUpdater
 
 main_loop = get_event_loop()
 
